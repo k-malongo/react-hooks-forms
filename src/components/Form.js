@@ -2,7 +2,7 @@ import React from "react";
 
 function Form(props) {
   return (
-    <form>
+    <form onSubmit={props.handleSubmit}>
       <input
         type="text"
         onChange={props.handleFirstNameChange}
@@ -15,6 +15,7 @@ function Form(props) {
       />
       <button type="submit">Submit</button>
     </form>
+    
   );
 }
 
